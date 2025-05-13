@@ -4,11 +4,11 @@ A Node.js service with two HTTP endpoints to ingest receipts and calculate point
 
 # Validation
 
-retailer: required, `^[\w\s\-&]+$` 
-purchaseDate: required, `YYYY-MM-DD` format
-purchaseTime: required, `HH:MM` (24-hour) format
-total: required, `^\d+\.\d{2}$` (two decimal places)
-items: required, and:
+retailer: required, `^[\w\s\-&]+$`\
+purchaseDate: required, `YYYY-MM-DD` format\
+purchaseTime: required, `HH:MM` (24-hour) format\
+total: required, `^\d+\.\d{2}$` (two decimal places)\
+items: required, and:\
    - shortDescription: `^[\w\s\-&]+$`
    - price: `^\d+\.\d{2}$` (two decimal places)
 
